@@ -60,7 +60,7 @@ RouteModel::Node &RouteModel::FindClosestNode(float x, float y){
         dist = input.distance(SNodes()[node_idx]);
         if (dist < min_dist){
           closest_idx = node_idx;
-          dist = min_dist;
+          min_dist = dist;
         }
       }
     }
